@@ -3,7 +3,8 @@ import requests
 from csv import writer
 
 # Collect and parse first page
-URL = "https://www.trustpilot.com/review/houseofmalt.co.uk?page="
+URL = "https://www.trustpilot.com/review/houseofmalt.co.uk?page="  #change the url according to the change in page number
+
 with open('sentiment.csv', '+w', encoding= 'utf8', newline='') as f:
     thewriter = writer(f)
     header = ['Review','Score']
