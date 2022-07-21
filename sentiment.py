@@ -1,7 +1,7 @@
 from textblob import TextBlob
 import pandas as pds
 from csv import writer
-df = pds.read_csv(r"C:\Users\Arnav Das\Desktop\sentiment.csv")
+df = pds.read_csv(r"C:\Users\Arnav Das\Desktop\sentiment.csv") #modify excel sheet with index on the first column and remove scores by users
 df.set_index('Index', inplace=True)
 result2 = []
 
